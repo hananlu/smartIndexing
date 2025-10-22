@@ -4,10 +4,10 @@ import pytesseract
 import re
 import os
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+#pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
-st.set_page_config(page_title="OCR ISO Detector", page_icon="🔍")
+st.set_page_config(page_title="Smart Indexing", page_icon="🔍")
 
 st.markdown(
     """

@@ -23,15 +23,15 @@ st.markdown("Silahkan upload dokumen ISO")
 
 uploaded_file = st.file_uploader("📤 Upload an image", type=["jpg", "jpeg", "png"])
 
-"""
-Base Function
-def extract_text_from_image(image_path: str) -> str:
-    if not os.path.exists(image_path):
-        raise FileNotFoundError(f"Image not found: {image_path}")
-    image = Image.open(image_path)
-    text = pytesseract.image_to_string(image)
-    return text.strip()
-"""
+
+# Base Function
+# def extract_text_from_image(image_path: str) -> str:
+#     if not os.path.exists(image_path):
+#         raise FileNotFoundError(f"Image not found: {image_path}")
+#     image = Image.open(image_path)
+#     text = pytesseract.image_to_string(image)
+#     return text.strip()
+
 
 def extract_text_from_image(image_path: str) -> str:
     """
@@ -122,3 +122,4 @@ if uploaded_file is not None:
         st.warning("❌ Specific ISO value not found.")
 else:
     st.info("👆 Upload an image file to start Check ISO.")
+
